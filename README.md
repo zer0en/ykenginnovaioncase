@@ -4,7 +4,11 @@
 
 AI Arena is a fully static web application that lets you send the same prompt to multiple AI providers and compare their responses in real time. No backend, no signups, no data collection — your API keys stay in your browser only.
 
-**Live demo:** `https://<your-username>.github.io/ai-arena/`
+**Live demo:** `https://zer0en.github.io/ykenginnovaioncase/`
+
+**Case answer:** `https://zer0en.github.io/ykenginnovaioncase/` (open the `Innovation Case` tab)
+
+**Repository:** `https://github.com/zer0en/ykenginnovaioncase`
 
 ---
 
@@ -73,8 +77,8 @@ No build step needed. Just open `index.html` in any browser:
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/ai-arena.git
-cd ai-arena
+git clone https://github.com/zer0en/ykenginnovaioncase.git
+cd ykenginnovaioncase
 
 # Option A: open directly
 start index.html        # Windows
@@ -95,7 +99,7 @@ This repo is configured to deploy automatically via GitHub Actions.
 2. Go to **Settings → Pages** and set source to **GitHub Actions**
 3. Push to `main` — the workflow in `.github/workflows/deploy.yml` will deploy automatically
 
-Your site will be live at `https://<your-username>.github.io/ai-arena/`.
+Your site will be live at `https://zer0en.github.io/ykenginnovaioncase/`.
 
 ---
 

@@ -115,6 +115,21 @@ White-label licensing for companies that want to run internal AI evaluation plat
 
 Total investment needed: ~$250,000 (1 backend developer, hosting, marketing). Break-even: approximately 14 months.
 
+### How the company actually makes money
+
+To make this clearer, the business earns money in three direct ways:
+
+1. **Monthly subscriptions (main income):**
+Free users can test the product, but paid users unlock higher limits, saved history, team workspaces, and analytics.
+
+2. **Enterprise licensing (high-value contracts):**
+Companies can buy a private version with SSO, audit logs, and internal model integrations. This is sold as yearly contracts.
+
+3. **Usage margin on API calls (optional):**
+In the paid hosted version, the platform can include API usage in the plan price and keep a margin between provider cost and customer price.
+
+In short: free tier for growth, subscriptions for recurring revenue, and enterprise deals for larger profit.
+
 ---
 
 ## The MVP — What's Already Built
