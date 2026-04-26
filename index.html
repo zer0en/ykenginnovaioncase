@@ -235,6 +235,76 @@
         <p>Writing the case alongside the code also changed how I thought about the project. Explaining why I made certain choices, and how the business side could work, made me look at it differently than if I had just been coding. I think that is actually a useful skill going forward, being able to talk about what you built and why, not just build it.</p>
         <p>If I were to do this again I would probably spend more time upfront checking if people actually want something like this before jumping into the code. That is probably the most important thing I take away from this.</p>
 
+        <h2>Technical Word List</h2>
+        <div class="glossary">
+
+          <div class="gloss-item">
+            <dt>API (Application Programming Interface)</dt>
+            <dd>A way for two programs to talk to each other. When you type a prompt into AI Arena, the site uses an API to send that prompt to OpenAI or Gemini and get a response back.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>API key</dt>
+            <dd>A secret password that identifies who is making a request to an API. AI providers use them to know whose account to bill and to block unauthorised access.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>Static web application</dt>
+            <dd>A website made of plain HTML, CSS and JavaScript files that run entirely in the browser. There is no server in the middle processing requests. This makes it cheap and fast to host.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>localStorage</dt>
+            <dd>A small storage area built into every browser where a website can save data on your own computer. AI Arena uses it to remember your API keys so you don't have to paste them in every time. The data never leaves your device.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>GitHub Pages</dt>
+            <dd>A free hosting service by GitHub that turns a repository's files into a live website. This site is hosted there.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>GitHub Actions</dt>
+            <dd>An automation tool built into GitHub. Every time new code is pushed to the repository, it automatically runs a workflow that deploys the updated site to GitHub Pages.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>MVP (Minimum Viable Product)</dt>
+            <dd>The simplest version of a product that is still useful enough to test with real users. The goal is to prove an idea works before spending a lot of time and money on a full version.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>SaaS (Software as a Service)</dt>
+            <dd>A business model where users pay a subscription to use software online rather than buying and installing it. Spotify and Notion are examples. The Stage 2 plan for AI Arena would follow this model.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>MRR (Monthly Recurring Revenue)</dt>
+            <dd>The amount of subscription income a business earns every month. It is a common way to measure growth for SaaS products.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>Open-source</dt>
+            <dd>Software where the source code is publicly available for anyone to read, use and modify. Hugging Face hosts many open-source AI models that anyone can run for free.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>Promise.allSettled()</dt>
+            <dd>A JavaScript feature that runs multiple tasks at the same time and waits for all of them to finish, even if some fail. AI Arena uses it to query both AI models simultaneously when comparing.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>SSO (Single Sign-On)</dt>
+            <dd>A login system that lets users sign in once and access multiple services. Common in enterprise software so employees don't need a separate password for every tool.</dd>
+          </div>
+
+          <div class="gloss-item">
+            <dt>Token</dt>
+            <dd>The unit AI models use to measure text. Roughly one token equals about four characters or three quarters of a word. AI providers charge per token, so it is useful to know how many a response uses.</dd>
+          </div>
+
+        </div>
+
       </div>
     </section>
   </div><!-- /tab-case -->
