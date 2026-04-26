@@ -7,6 +7,16 @@
 
 'use strict';
 
+// ── Tab navigation ─────────────────────────────────────────────────────────
+
+function showTab(name) {
+  document.getElementById('tab-app').classList.toggle('hidden', name !== 'app');
+  document.getElementById('tab-case').classList.toggle('hidden', name !== 'case');
+  document.querySelectorAll('.nav-tab').forEach((btn, i) => {
+    btn.classList.toggle('active', (i === 0 && name === 'app') || (i === 1 && name === 'case'));
+  });
+}
+
 // ── Model catalogue ────────────────────────────────────────────────────────
 
 const PROVIDERS = {

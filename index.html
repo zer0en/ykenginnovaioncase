@@ -15,10 +15,17 @@
         <span class="logo-text">AI <strong>Arena</strong></span>
       </div>
       <p class="tagline">Test &amp; compare AI models — side by side</p>
+      <nav class="header-nav">
+        <button class="nav-tab active" onclick="showTab('app')">⚡ Try it</button>
+        <button class="nav-tab" onclick="showTab('case')">📄 Innovation Case</button>
+      </nav>
     </div>
   </header>
 
   <main>
+
+  <!-- ══ APP TAB ══ -->
+  <div id="tab-app">
 
     <!-- ── Prompt ── -->
     <section class="prompt-section">
@@ -120,12 +127,125 @@
       </div>
     </section>
 
+  </div><!-- /tab-app -->
+
+  <!-- ══ CASE TAB ══ -->
+  <div id="tab-case" class="hidden">
+    <section class="case-section">
+
+      <div class="case-hero">
+        <h1>AI Arena — Innovation Case</h1>
+        <p class="case-meta">Programming 4 Money &nbsp;·&nbsp; Programming Specialist Division &nbsp;·&nbsp; April 2026</p>
+      </div>
+
+      <div class="case-body">
+
+        <h2>The Invention</h2>
+        <p>I propose building <strong>AI Arena</strong> — a browser-based platform that lets anyone test and compare AI language models side by side, in real time, without installing anything.</p>
+        <p>The core problem it solves: there are now dozens of competing AI models (GPT-4o, Gemini, Mistral, and more), but no easy way for a regular person — or a business — to evaluate which model is actually best for their specific use case. AI Arena makes that comparison instant and visual.</p>
+
+        <h2>Why This Is Marketable</h2>
+        <p>The AI industry generated over $184 billion in revenue in 2024, and every business is trying to figure out which AI tool to use. Currently the only way to compare models is to sign up for each service individually, pay for multiple subscriptions, and test them manually one at a time. AI Arena removes all of that friction.</p>
+
+        <div class="case-table-wrap">
+          <table class="case-table">
+            <thead><tr><th>Customer</th><th>Use case</th></tr></thead>
+            <tbody>
+              <tr><td>Businesses</td><td>Evaluate AI vendors before signing contracts</td></tr>
+              <tr><td>Developers</td><td>Benchmark models for specific coding tasks</td></tr>
+              <tr><td>Students &amp; researchers</td><td>Academic comparison and testing</td></tr>
+              <tr><td>Non-technical users</td><td>Try AI without understanding the backend</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Technical Architecture</h2>
+        <p>The MVP is built as a <strong>fully static web application</strong> — it runs entirely in the user's browser with no server infrastructure required. This was a deliberate engineering decision to minimise cost and attack surface.</p>
+
+        <div class="case-table-wrap">
+          <table class="case-table">
+            <thead><tr><th>Layer</th><th>Technology</th><th>Reason</th></tr></thead>
+            <tbody>
+              <tr><td>UI</td><td>HTML5 + CSS3</td><td>Zero dependencies, instant load</td></tr>
+              <tr><td>Logic</td><td>Vanilla JavaScript (ES2022)</td><td>No framework overhead</td></tr>
+              <tr><td>API integration</td><td>Fetch API (browser-native)</td><td>Direct calls to AI providers</td></tr>
+              <tr><td>Deployment</td><td>GitHub Pages + GitHub Actions</td><td>Free, auto-deploys on push</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>When compare mode is activated, both API calls fire simultaneously using <code>Promise.allSettled()</code> — if one model fails, the other still shows its result. The user's API key is stored in <code>localStorage</code> and never passes through any intermediate server.</p>
+
+        <h2>Communication to the Firm — Business Plan</h2>
+
+        <div class="case-stages">
+          <div class="case-stage">
+            <div class="stage-num">1</div>
+            <div>
+              <strong>Stage 1 — Free tool (months 1–3)</strong>
+              <p>Launch the static MVP to build an audience. GitHub Pages costs nothing to run. Goal: 10,000 monthly active users as proof of demand.</p>
+            </div>
+          </div>
+          <div class="case-stage">
+            <div class="stage-num">2</div>
+            <div>
+              <strong>Stage 2 — Freemium SaaS (months 4–9)</strong>
+              <p>Add user accounts and a paid tier: <em>Free</em> (20 prompts/day), <em>Pro $9/mo</em> (unlimited + history), <em>Teams $49/mo</em> (shared workspaces, analytics).</p>
+            </div>
+          </div>
+          <div class="case-stage">
+            <div class="stage-num">3</div>
+            <div>
+              <strong>Stage 3 — Enterprise (month 10+)</strong>
+              <p>White-label licensing for companies running internal AI evaluation platforms. Custom model integrations, SSO, compliance features.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-table-wrap">
+          <table class="case-table">
+            <thead><tr><th>Year</th><th>Users</th><th>Conversion</th><th>MRR</th></tr></thead>
+            <tbody>
+              <tr><td>Year 1</td><td>50,000</td><td>2% Pro</td><td>~$9,000/mo</td></tr>
+              <tr><td>Year 2</td><td>200,000</td><td>3% Pro + Teams</td><td>~$60,000/mo</td></tr>
+              <tr><td>Year 3</td><td>500,000</td><td>Mix of tiers</td><td>~$200,000/mo</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="color:var(--text-muted);font-size:0.85rem">Total investment needed: ~$250,000. Break-even: ~14 months.</p>
+
+        <h2>The MVP — What's Already Built</h2>
+        <ul class="case-checklist">
+          <li>✅ Send any prompt to OpenAI, Gemini, or Hugging Face models</li>
+          <li>✅ Compare two models side-by-side simultaneously</li>
+          <li>✅ Displays response time and token usage per model</li>
+          <li>✅ API keys saved locally — fully private, never logged</li>
+          <li>✅ Works on mobile and desktop</li>
+          <li>✅ Zero install — just a URL</li>
+          <li>✅ Deployed and publicly accessible via GitHub Pages</li>
+        </ul>
+        <p>
+          <a href="https://github.com/zer0en/ykenginnovaioncase" target="_blank" rel="noopener" class="case-link">📂 View source on GitHub</a>
+          <button class="btn-primary" style="margin-left:12px" onclick="showTab('app')">⚡ Try the MVP</button>
+        </p>
+
+        <h2>Reflection</h2>
+        <p><strong>Scoping matters.</strong> My first instinct was to build something complex with a database and a backend API. But the most effective MVP is the simplest thing that proves the concept. By choosing a static architecture, I shipped a working product in a fraction of the time — and it's already live.</p>
+        <p><strong>Security by design.</strong> I stored API keys only in the user's own browser, eliminating the risk of a server-side breach exposing them. This is the principle of <em>least privilege</em> applied at the architecture level, not as an afterthought.</p>
+        <p><strong>Communication is part of engineering.</strong> Writing the README, structuring the pitch, and thinking through a revenue model forced me to think about the product from the user's perspective. In a real IT firm you don't just write code — you justify why your solution is the right one and convince stakeholders. That skill is as important as the code itself.</p>
+        <p><strong>What I would do differently:</strong> validate the market earlier. Before writing a single line of code I'd check search volume data for "compare AI models" to confirm real demand. Building something nobody wants is the most expensive mistake in tech.</p>
+        <p>This exercise showed me that a programmer's value isn't purely technical — it's in identifying real problems, designing the right solution at the right scale, and communicating that decision clearly to everyone in the room.</p>
+
+      </div>
+    </section>
+  </div><!-- /tab-case -->
+
   </main>
 
   <footer>
     <p>
       AI Arena · API keys stored only in your browser ·
-      <a href="https://github.com" target="_blank" rel="noopener">View on GitHub</a>
+      <a href="https://github.com/zer0en/ykenginnovaioncase" target="_blank" rel="noopener">View on GitHub</a>
     </p>
   </footer>
 
