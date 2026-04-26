@@ -138,17 +138,13 @@ The fact that I can show a working, deployed product — not just a slideshow �
 
 ## Reflection
 
-This project taught me several things that are directly relevant to a future career in IT.
+I started out wanting to build something way more complicated, with user logins, a database and a full backend. But the more I thought about it, the more I realised that would just slow me down without actually proving the idea works. So I kept it simple and ended up with something I could actually show people, which felt way better than a half-finished project with a lot of fancy features.
 
-**Scoping matters.** My first instinct was to build something complex with a database, user authentication, and a backend API. But the most effective MVP is the simplest thing that proves the concept. By choosing a static architecture, I shipped a working product in a fraction of the time — and it's already live.
+One thing I thought about early on was what happens if someone's API key gets leaked. By keeping the keys in the user's own browser instead of storing them on a server, I removed that problem completely. It wasn't something I read in a textbook, it just made sense when I thought it through.
 
-**Security by design.** One of the first things I thought about was: what happens if someone steals the API keys? By storing them only in the user's own browser and never routing them through a server I control, I eliminated that attack surface entirely. This is the principle of *least privilege* applied at the architecture level, not as an afterthought.
+Writing the case alongside the code also changed how I thought about the project. Explaining why I made certain choices, and how the business side could work, made me look at it differently than if I had just been coding. I think that is actually a useful skill going forward, being able to talk about what you built and why, not just build it.
 
-**Communication is part of engineering.** Writing the README, structuring the pitch, and thinking about a revenue model forced me to think about the product from the user's perspective — not just the technical perspective. In a real IT firm, you don't just write code. You explain why your solution is the right one, justify the cost, and convince stakeholders. That skill is as important as the code itself.
-
-**What I would do differently:** I'd validate the market earlier. Before writing a single line of code, I'd run a simple survey or look at search volume data for "compare AI models" to confirm real demand. Building something nobody wants is the most expensive mistake in tech.
-
-This exercise showed me that a programmer's value isn't just technical — it's in identifying real problems, designing the right solution at the right scale, and communicating that decision clearly to everyone in the room.
+If I were to do this again I would probably spend more time upfront checking if people actually want something like this before jumping into the code. That is probably the most important thing I take away from this.
 
 ---
 
